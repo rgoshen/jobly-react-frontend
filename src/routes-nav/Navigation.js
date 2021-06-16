@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
+import { Navbar } from "react-bootstrap";
 import UserContext from "../auth/UserContext";
 import "./Navigation.css";
 
@@ -17,55 +19,60 @@ function Navigation({ logout }) {
 
   function loggedInNav() {
     return (
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item mr-4">
-            <NavLink className="nav-link" to="/companies">
-              Companies
-            </NavLink>
-          </li>
-          <li className="nav-item mr-4">
-            <NavLink className="nav-link" to="/jobs">
-              Jobs
-            </NavLink>
-          </li>
-          <li className="nav-item mr-4">
-            <NavLink className="nav-link" to="/profile">
-              Profile
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/" onClick={logout}>
-              Log out {currentUser.first_name || currentUser.username}
-            </Link>
-          </li>
-        </ul>
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item mr-4">
+          <NavLink className="nav-link" to="/companies">
+            Companies
+          </NavLink>
+        </li>
+        <li className="nav-item mr-4">
+          <NavLink className="nav-link" to="/jobs">
+            Jobs
+          </NavLink>
+        </li>
+        <li className="nav-item mr-4">
+          <NavLink className="nav-link" to="/profile">
+            Profile
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/" onClick={logout}>
+            Log out {currentUser.first_name || currentUser.username}
+          </Link>
+        </li>
+      </ul>
     );
   }
 
   function loggedOutNav() {
     return (
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item mr-4">
-            <NavLink className="nav-link" to="/login">
-              Login
-            </NavLink>
-          </li>
-          <li className="nav-item mr-4">
-            <NavLink className="nav-link" to="/signup">
-              Sign Up
-            </NavLink>
-          </li>
-        </ul>
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item mr-4">
+          <NavLink className="nav-link" to="/login">
+            Login
+          </NavLink>
+        </li>
+        <li className="nav-item mr-4">
+          <NavLink className="nav-link" to="/signup">
+            Sign Up
+          </NavLink>
+        </li>
+      </ul>
     );
   }
 
   return (
-      <nav className="Navigation navbar navbar-expand-md">
-        <Link className="navbar-brand" to="/">
+    <nav className="Navigation navbar navbar-expand-lg">
+      <div className="container-fluid">
+        {/* <Link className="navbar-brand" to="/">
           Jobly
-        </Link>
+        </Link> */}
+        <LinkContainer to="/">
+          <Navbar.Brand>Jobly</Navbar.Brand>
+        </LinkContainer>
         {currentUser ? loggedInNav() : loggedOutNav()}
-      </nav>
+      </div>
+    </nav>
   );
 }
 
