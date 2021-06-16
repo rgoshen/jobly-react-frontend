@@ -64,9 +64,6 @@ function Navigation({ logout }) {
   return (
     <nav className="Navigation navbar navbar-expand-lg">
       <div className="container-fluid">
-        {/* <Link className="navbar-brand" to="/">
-          Jobly
-        </Link> */}
         <LinkContainer to="/">
           <Navbar.Brand>Jobly</Navbar.Brand>
         </LinkContainer>
