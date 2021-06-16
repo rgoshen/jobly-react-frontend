@@ -33,17 +33,25 @@ function SearchForm({ searchFor }) {
 
   return (
     <div className="SearchForm mb-4">
-      <form className="form-inline" onSubmit={handleSubmit}>
-        <input
-          className="form-control form-control-lg flex-grow-1"
-          name="searchTerm"
-          placeholder="Enter search term..."
-          value={searchTerm}
-          onChange={handleChange}
-        />
-        <button type="submit" className="btn btn-lg btn-primary mt-2">
-          Submit
-        </button>
+      {/* <form className="form-inline" onSubmit={handleSubmit}> */}
+      <form
+        className="row gy-2 gx-3 align-items-center"
+        onSubmit={handleSubmit}
+      >
+        <div className="col-sm-9">
+          <input
+            className="form-control form-control-lg flex-grow-1"
+            name="searchTerm"
+            placeholder="Enter search term..."
+            value={searchTerm}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="col-auto">
+          <button type="submit" className="btn btn-lg btn-primary mt-2">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
