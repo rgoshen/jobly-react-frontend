@@ -14,17 +14,21 @@ function CompanyCard({ name, description, logoUrl, handle }) {
   console.debug("CompanyCard", logoUrl);
 
   return (
-      <Link className="CompanyCard card" to={`/companies/${handle}`}>
+    <div className="col">
+      <Link className="CompanyCard card h-100" to={`/companies/${handle}`}>
+        <div className="card-header text-center">
+          <h6 className="card-title">{name}</h6>
+        </div>
         <div className="card-body">
-          <h6 className="card-title">
-            {name}
-            {logoUrl && <img src={logoUrl}
-                             alt={name}
-                             className="float-right ml-5" />}
-          </h6>
-          <p><small>{description}</small></p>
+          {logoUrl && (
+            <img src={logoUrl} alt={name} className="float-right ml-5" />
+          )}
+          <p>
+            <small>{description}</small>
+          </p>
         </div>
       </Link>
+    </div>
   );
 }
 
