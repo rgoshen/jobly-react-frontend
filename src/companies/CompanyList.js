@@ -33,7 +33,8 @@ function CompanyList() {
   if (!companies) return <LoadingSpinner />;
 
   return (
-    <div className="CompanyList col-md-8 offset-md-2">
+    // <div className="CompanyList col-md-8 offset-md-2">
+    <div className="CompanyList container-fluid">
       <SearchForm searchFor={search} />
       {companies.length ? (
         <div className="CompanyList-list row row-cols-1 row-cols-md-3 g-4">
