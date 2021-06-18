@@ -100,7 +100,7 @@ function SignupForm({ signup }) {
                   onChange={handleChange}
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group mb-2">
                 <label>Email</label>
                 <input
                   type="email"
