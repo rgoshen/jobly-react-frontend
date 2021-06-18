@@ -17,11 +17,14 @@ function JobCard({ id, title, salary, equity, companyName }) {
   const { hasAppliedToJob, applyToJob } = useContext(UserContext);
   const [applied, setApplied] = useState();
 
-  React.useEffect(function updateAppliedStatus() {
-    console.debug("JobCard useEffect updateAppliedStatus", "id=", id);
+  React.useEffect(
+    function updateAppliedStatus() {
+      console.debug("JobCard useEffect updateAppliedStatus", "id=", id);
 
-    setApplied(hasAppliedToJob(id));
-  }, [id, hasAppliedToJob]);
+      setApplied(hasAppliedToJob(id));
+    },
+    [id, hasAppliedToJob]
+  );
 
   /** Apply for a job */
   async function handleApply(evt) {
@@ -31,21 +34,33 @@ function JobCard({ id, title, salary, equity, companyName }) {
   }
 
   return (
-      <div className="JobCard card"> {applied}
+    <div className="col">
+      <div className="JobCard card h-100">
+        {" "}
+        {applied}
         <div className="card-body">
           <h6 className="card-title">{title}</h6>
           <p>{companyName}</p>
-          {salary && <div><small>Salary: {formatSalary(salary)}</small></div>}
-          {equity !== undefined && <div><small>Equity: {equity}</small></div>}
+          {salary && (
+            <div>
+              <small>Salary: {formatSalary(salary)}</small>
+            </div>
+          )}
+          {equity !== undefined && (
+            <div>
+              <small>Equity: {equity}</small>
+            </div>
+          )}
           <button
-              className="btn btn-danger font-weight-bold text-uppercase float-right"
-              onClick={handleApply}
-              disabled={applied}
+            className="btn btn-danger font-weight-bold text-uppercase float-right mt-2"
+            onClick={handleApply}
+            disabled={applied}
           >
             {applied ? "Applied" : "Apply"}
           </button>
         </div>
       </div>
+    </div>
   );
 }
 
@@ -62,6 +77,5 @@ function formatSalary(salary) {
 
   return digitsRev.reverse().join("");
 }
-
 
 export default JobCard;
