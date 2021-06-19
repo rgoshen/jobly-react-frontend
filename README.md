@@ -37,6 +37,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Start up](#start-the-app)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
