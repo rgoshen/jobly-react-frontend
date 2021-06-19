@@ -1,11 +1,4 @@
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -26,10 +19,8 @@
   <p align="center">
     A dynamic React App frontend for the fictitious Jobly job search API.
     <br />
-    <a href="https://github.com/rgoshen/jobly-react-frontend"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/rgoshen/jobly-react-frontend">View Demo</a>
+    <a href="https://react-jobly-rg.surge.sh/">View App Live</a>
     ·
     <a href="https://github.com/rgoshen/jobly-react-frontend/issues">Report Bug</a>
     ·
@@ -51,21 +42,21 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+<!-- - [Acknowledgements](#acknowledgements) -->
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://react-jobly-rg.surge.sh/)
 
-This is the front end for an Express.js backend found [here](https://github.com/rgoshen/jobly-express-backend).
+This is the front end for an Express.js backend found [here](https://github.com/rgoshen/jobly-express-backend). It allows the user to login/logout, list all companies in the database, click on a company card to list the available jobs of the individual company and "apply" by clicking the Apply button. The app will store all the jobs the user applied to. It also allows the user to search for a company by name or handle and job by title. Lastly, allows the user to update their own profile.
 
 ### Built With
 
-- []()
-- []()
-- []()
+- [React.js](https://reactjs.org/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [React Router](https://reactrouter.com/)
 
 <!-- GETTING STARTED -->
 
@@ -97,13 +88,94 @@ git clone https://github.com/rgoshen/jobly-react-frontend.git
 npm install
 ```
 
+3. Clone the backend repo
+
+```sh
+git clone https://github.com/rgoshen/jobly-express-backend
+```
+
+4. Install NPM packages
+
+```sh
+npm install
+```
+
+### Start the app
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Available Scripts
+
+In the project directory, you can run:
+
+#### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+#### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+#### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+#### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+### Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+[![App Demo][app-demo]](https://react-jobly-rg.surge.sh/)
 
 <!-- ROADMAP -->
 
@@ -133,7 +205,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@RickGoshen](https://twitter.com/RickGoshen) - [email](mailto:rick.goshen@gmail.com)
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FRickGoshen) - [@RickGoshen](https://twitter.com/RickGoshen) - [email](mailto:rick.goshen@gmail.com)
 
 Project Link: [https://github.com/rgoshen/jobly-react-frontend](https://github.com/rgoshen/jobly-react-frontend)
 
@@ -148,16 +220,17 @@ Project Link: [https://github.com/rgoshen/jobly-react-frontend](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=flat-square
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=flat-square
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/rgoshen/jobly-react-frontend
+[contributors-url]: https://github.com/rgoshen/jobly-react-frontend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rgoshen/jobly-react-frontend
+[forks-url]: https://github.com/rgoshen/jobly-react-frontend/network/members
+[stars-shield]: https://img.shields.io/github/stars/rgoshen/jobly-react-frontend
+[stars-url]: https://github.com/rgoshen/jobly-react-frontend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rgoshen/jobly-react-frontend
+[issues-url]: https://github.com/rgoshen/jobly-react-frontend/issues
+[license-shield]: https://img.shields.io/github/license/rgoshen/jobly-react-frontend
+[license-url]: https://github.com/rgoshen/jobly-react-frontend/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/rickgoshen
 [product-screenshot]: images/landing_page.png
+[app-demo]: images/jobly-demo.gif
