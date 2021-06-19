@@ -24,7 +24,7 @@
   <h3 align="center">React Jobly Frontend</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    A dynamic React App frontend for the fictitious Jobly job search API.
     <br />
     <a href="https://github.com/rgoshen/jobly-react-frontend"><strong>Explore the docs »</strong></a>
     <br />
@@ -59,9 +59,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
+This is the front end for an Express.js backend found [here](https://github.com/rgoshen/jobly-express-backend).
 
 ### Built With
 
@@ -141,11 +139,11 @@ Project Link: [https://github.com/rgoshen/jobly-react-frontend](https://github.c
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## Acknowledgements
+<!-- ## Acknowledgements -->
 
-- []()
-- []()
-- []()
+<!-- - []() -->
+<!-- - []() -->
+<!-- - []() -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -162,4 +160,4 @@ Project Link: [https://github.com/rgoshen/jobly-react-frontend](https://github.c
 [license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/github_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/landing_page.png
